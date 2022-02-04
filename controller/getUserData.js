@@ -5,23 +5,17 @@ const getAllUsers = async (req, res) => {
     const answer = await findAllUsers().catch(err => console.log(err));
     return res.status(200).json(answer);
 }
-
 const getExerciseForUser = async (req, res) => {
     const { limit = 0 } = req.query;
     let userId = {
         ...req.params,
         ...req.query
     }
-
     let answer = await findUserData(userId).catch(err => console.log("There is a really long error at line 16 in getUserData"))
 
     if (answer == undefined) { console.log("Entered undefined here"); return res.status(200).json({ "Error": "No such user" }) };
 
-    // answer = await answer[0];
-    // console.log(answer.length)
-
     if (answer.length == 0) {
-        // console.log("entered empty here")
         userId = {
             ...req.params,
         }
@@ -71,9 +65,6 @@ const getExerciseForUser = async (req, res) => {
                     }
                 })
         }
-
-
-
         return res.status(200).json(output);
     }
 }

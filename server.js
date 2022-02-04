@@ -3,9 +3,6 @@ const app = express();
 const cors = require('cors');
 const usersRoute = require("./routes/usersRoute");
 
-
-
-
 app.use(express.urlencoded({ extended: false }));
 app.use(express.text());
 app.use(express.json());
@@ -24,7 +21,6 @@ app.use(function (e, req, res, next) {
     res.status(400).json({ msg: e.message });
   }
 });
-
 
 var listener = app.listen(5000, function () {
   console.log('Your app is listening on port ' + listener.address().port);
