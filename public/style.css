@@ -1,64 +1,99 @@
-
-* {
-  box-sizing: border-box;
-}
-
 body {
-  font-family:sans-serif;
-  margin: 25px;
-  color: #222;
-  background-color: #f5f5f5;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: rgb(209, 240, 211);
+  background: rgb(42, 31, 61);
+  text-align: center;
+  line-height: 1.4em;
 }
 
-h1 {
-  font-weight: bold;
-  
+form.userRegistration {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1em;
+  padding: 1em;
+  background-color: darkslategray;
+  width: 30%;
 }
 
-.bold {
-  font-weight: bold;
+form.exerciseAdder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1em;
+  padding: 1em;
+  background-color: darkslategray;
+  width: 40%;
 }
 
-p {
-  max-width: 900px;
+.title {
+  background: #2574A9;
+  margin: 0;
+  padding: 0.2em;
+  color: aliceblue;
 }
 
-form {
-  margin-bottom: 25px;
-  padding: 15px;
-  background-color: #87D37C;
-  display: inline-block;
-  width: 100%;
-  max-width: 340px;
-  border-radius: 5px;
+.container {
+  padding: 0;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-input {
-  display: block;
+h3 {
+  margin-top: 15px;
   margin-bottom: 10px;
-  padding: 5px;
-  width: 100%;
-  border: 1px solid lightgrey;
-  border-radius: 3px;
-  font-size: 16px;
-}
-
-input[type=submit] {
-  font-size: 16px;
-  border-radius: 3px;
-  background-color: #E4F1FE;
-  border: 1px solid grey;
-  box-shadow: 2px 2px #999;
-  cursor: pointer;
-}
-
-input[type=submit]:hover {
-  background-color: #FFFEC4;
 }
 
 code {
   font-family: monospace;
-  font-size: 1.2em;
-  background-color: #FFFEC4;
   padding: 2px;
+  color: rgb(238, 240, 227);
+  background-color: #e4e0e070;
+  font-size: 1.1em;
+}
+
+ul {
+  list-style-type: none;
+  background: darkred;
+  width: 80%;
+  padding: 1em 0 1em 0;
+
+}
+
+li {
+  margin-bottom: 0.5em;
+}
+
+a {
+  color: #ececec;
+  text-decoration: none;
+}
+
+.footer-text {
+  font-size: 0.6em;
+}
+
+input.new-user-input {
+  width: 16em;
+  font-size: 1.3em;
+  margin: 0.2em;
+  text-align: center;
+}
+
+input.create-exercise-input {
+  width: 32em;
+  font-size: 1.3em;
+  margin: 0.2em;
+  text-align: center;
+}
+
+
+input.submit-button {
+  width: 16em;
+  font-size: 1.1em;
+  margin: 0.7em;
+  text-align: center;
 }
