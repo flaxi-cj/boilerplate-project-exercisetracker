@@ -14,7 +14,8 @@ form.userRegistration {
   margin: 1em;
   padding: 1em;
   background-color: darkslategray;
-  width: 30%;
+  min-width: 27em;
+  width: 27%;
 }
 
 form.exerciseAdder {
@@ -24,7 +25,8 @@ form.exerciseAdder {
   margin: 1em;
   padding: 1em;
   background-color: darkslategray;
-  width: 40%;
+  min-width: 40em;
+  width: 36%;
 }
 
 .title {
@@ -84,7 +86,7 @@ input.new-user-input {
 }
 
 input.create-exercise-input {
-  width: 32em;
+  width: 26em;
   font-size: 1.3em;
   margin: 0.2em;
   text-align: center;
@@ -92,7 +94,7 @@ input.create-exercise-input {
 
 
 input.submit-button {
-  width: 16em;
+  width: 12em;
   font-size: 1.1em;
   margin: 0.7em;
   text-align: center;
